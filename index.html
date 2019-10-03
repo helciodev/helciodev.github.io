@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helcio Andre</title>
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Merienda+One|Open+Sans|Pacifico|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+   
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+             <nav>
+                <ul>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <blockquote><h1>Obstacles are those frightful things you see when you take your eyes off your goals.</h1>
+                <cite>Henry Ford</cite>
+        </blockquote>
+           
+        </header>
+        <section id="about">
+            <div id="me">
+            <h2>Hi, There</h2>
+            <img src="https://scontent.flad1-1.fna.fbcdn.net/v/t1.0-9/42280366_2483905798286536_3266382405962825728_n.jpg?_nc_cat=107&_nc_oc=AQmyvuw-wONWUx1d83Z0STbjRIprGBh-uKWTuzc_G_eZ98tFg3OgmWSnhXPi0vaGukM&_nc_ht=scontent.flad1-1.fna&oh=a5846c3136dc628ff93e4c2f9d081b32&oe=5DF02080" alt=" a picture of myself">
+            <p>My name is Helcio Andre, i am from Angola, Luanda!</p>
+            <p>I want to be a web dev so i can work with tecnology, i love it, to able to work from any part of the world, with people from different backgrounds and to make a good living for me and those around me</p>
+        </div>
+
+        <div id="mycity">
+                <h2>my city</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.8075835407667!2d13.286480314370541!3d-8.989846195018766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521dcabd235ae5%3A0xcfdc6a7e602e8257!2sKero%20Kilamba!5e0!3m2!1spt-PT!2sao!4v1570015547568!5m2!1spt-PT!2sao" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+</section>
+
+    <section id="other">
+        <article class="links" >
+           <h2>My current favorite links</h2>
+           <ul>
+               <li><a href="https://www.youtube.com" target="blank">Youtube</a></li>
+               <li><a href="https://www.facebook.com" target="blank">Facebook</a></li>
+               <li><a href="https://www.frontendmasters.com" target="blank">Front End Masters</a></li>
+               <li><a href="https://www.marca.com" target="blank">Marca</a></li>
+               <li><a href="https://www.globo.com" target="blank">Globo</a></li>
+           </ul>
+        </article>
+        <article class="reading">
+            <h2>currently reading</h2>
+            <a href="https://frontendmasters.com/books/front-end-handbook/2019/">Front End Developer Hand Book</a>
+        </article>
+        <article class="social">
+            <h2>My social links</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/helcioandre" target="blank"><img src="images/facebook-logo.png" alt="facebook social media icon" title="my facebook page"></a></li>
+                <li><a href="https://www.linkedin.com/in/helcio-andre/" target="blank"><img src="images/linkedin-logo.png" alt="linkedin social media icon" title="my linkedin"></a></li>
+            </ul>
+        </article>
+    </section>
+
+    <div id="contact">
+        <form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
+            <fieldset>
+                <legend>Your contact information</legend>
+                <label for="name">Your name </label>
+                <input type="text" id="name" name="name" autofocus>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Don't forget the area code!">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="comments">your message </label>
+                <textarea id="comments" name="comments"></textarea>
+                <input id="send_to" type="hidden" name="send_to" value="helcioandre@live.com">
+            </fieldset>
+                <button type="submit">Submit</button>
+        </form>
+
+>
+    </div>
+    </div>
+    <script src="js/forms.js"></script>
+</body>
+</html>

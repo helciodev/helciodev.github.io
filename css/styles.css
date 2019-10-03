@@ -1,0 +1,237 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0311FC;
+  }
+
+  body p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header {
+     background: url('../images/eduardo-flores-x84rVUB3TVk-unsplash.jpg') no-repeat;
+     background-size: cover;
+     background-position:bottom center;
+     height: 30rem;
+     margin-top: -1rem;
+  }
+
+  nav {
+      text-align:center;
+      margin-top:0
+      /* border: 1px solid blueviolet; */
+  }
+  nav ul {
+      list-style-type: none; 
+      margin-top: 0;
+      padding-top: 3rem
+  }
+
+  nav li {
+      display: inline-block
+  }
+
+  nav a:link {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        margin-right: 1rem;
+        font-weight: bold;
+  }
+
+  nav a:visited {
+      color:aqua;
+  }
+
+  nav a:hover {
+    color: white;
+    text-decoration: underline;
+      
+  }
+
+  blockquote {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Be Vietnam', sans-serif;
+  }
+
+  blockquote h1 {
+      color: white;
+  }
+
+  cite {
+      color: #999;
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem; 
+  }
+
+  #about {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+  }
+
+  #about h2, #mycity h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+  #me {
+    background-color: #080E33;
+    padding: 2rem 3rem;
+    color:white;
+  }
+
+ 
+
+  #me img {
+      border-radius: 50%;
+      width: 10rem;
+      height: 10rem;
+     
+  }
+
+  #me {
+      flex-basis: 60%;
+      text-align: center;
+  }
+
+  #mycity {
+      background-color: #0C154A;
+      flex-basis: 40%;
+      text-align: center;
+  }
+
+#other {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.links {
+    flex-basis: 30%;
+    background-color:#111E6C; 
+}
+
+.reading {
+    flex-basis: 30%;
+    background-color: #192DA1;
+}
+
+.links h2, .reading h2, .social h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: aliceblue
+}
+
+.links, .social, .reading {
+    padding: 1rem;
+}
+
+.social {
+    flex-basis: 40%;
+    background-color: #2039CC;
+}
+
+.links ul, .social ul {
+list-style-type:none;
+}
+
+.links li, .reading a {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.links a:link, .reading a:link {
+    text-decoration: none; 
+    color: antiquewhite;
+}
+
+.links a:visited, .reading a:visited {
+    color: #666;
+}
+
+.links a:hover, .reading a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.social ul {
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+form {
+text-align: center;
+margin-top: 3rem;
+color:#F2F2F2;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+
+label {
+font-family: 'Roboto', sans-serif;
+font-weight: bold; 
+}
+
+input {
+display: block;
+margin: 1rem auto;
+width: 20rem;
+height: 2rem;
+border:none;
+border-bottom: 1px solid #999;
+}
+
+textarea {
+    width: 30rem;
+    height: 10rem;
+    margin-top: 2rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #080E33;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  padding: .5rem;
+  width: 5rem;
+  text-transform: capitalize;
+}
+
+button:hover {
+    background-color:#666;
+}
