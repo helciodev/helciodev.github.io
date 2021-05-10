@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack web developer</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-body text-default">
+<div class="navigation md:hidden">
+  <input type="checkbox" class=" hidden navigationcheckbox" id="navi-toggle">
+  <label for="navi-toggle"class="navigationbutton flex items-center justify-center"><span class="navigationicon"></span></label>
+
+  <div class="navigationbackground transition-transform duration-700">&nbsp;</div>
+  <nav class="navigationnav transition-all duration-700">
+    <ul class="navigationlist space-y-3">
+      <li class="navigationitem"><a href="#projects" class="navigationlink">Projects</a></li>
+      <li class="navigationitem"><a href="#about-me" class="navigationlink">About me</a></li>
+      <li class="navigationitem"><a href="#contact-me" class="navigationlink">Contact me</a></li>
+    </ul>
+  </nav>
+</div>
+  <header class="md:flex hidden sticky top-0 filter drop-shadow-lg z-10 bg-white items-center px-md-3 justify-between md:px-5 py-5 px-5">
+    <a href="#" class="logo font-black text-2xl font-bold uppercase text-logo">
+      HelcioDev
+    </a>
+    <button class="nav-toggle text-logo md:hidden">
+      <span class="iconify" data-icon="codicon:three-bars" data-inline="false"></span>
+    </button>
+    <nav class="nav sm hidden md:block">
+      <ul class="nav__list text-xl font-bold flex space-x-6 w-64 text-default">
+        <li class="nav__item hover:text-logo text-default"><a href="#projects">Portfolio</a></li>
+        <li class="nav__item hover:text-logo"><a href="#about-me">About</a></li>
+        <li class="nav__item hover:text-logo"><a href="#contact-me">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- hero -->
+    <section id="hero" class="hero pt-10">
+      <div class="md:block mx-auto w-10/12">
+        <h1 class="hero__heading font-body text-3xl font-bold md:text-5xl text-dark">
+        <span class="block capitalize">hello 👋🏽</span>
+        <span class="block md:inline">I am <span class=" text-logo">Helcio</span> </span>
+        <span class="block">Glad to see <span class="text-logo">you!</span> </span>
+        </h1>
+        <p class="font-body mt-5 text-base text-paragraphs md:text-2xl md:w-3/4">
+          I’m a software <span class="text-logo">developer</span>! I can help you build a product , feature or website Look through some of my work <br class="md:hidden">
+          and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+  
+        <p class="font-body font-semibold uppercase text-connect my-4">
+          let's connect
+        </p>
+  
+        <div class="flex content-between space-x-4 text-icons text-3xl w-6/12">
+          <a class="hover:text-blue-500 animation-social" href="https://www.linkedin.com/in/helcio-andre/">
+            <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
+          </a>
+          <a class="hover:text-black animation-social" href="https://github.com/helciodev">
+            <span class="iconify" data-icon="teenyicons:github-solid" data-inline="false"></span>
+          </a>
+          <a class="hover:text-blue-700 animation-social" href="https://twitter.com/helcio_bruno">
+            <span class="iconify" data-icon="codicon:twitter" data-inline="false"></span>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="animate-bounce mt-44 flex justify-center">
+        <a href="#projects" class="animate-bounce text-7xl text-default">	
+          &#129171;</a>
+      </div> -->
+    </section>
+    <section id="projects" class="p-3 md:p-10 my-10">
+      <!-- project one -->
+     
+      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 my-16 p-5 border-gray-100 rounded-lg
+      bg-white">
+        <div class="p-3 bg-one max-h-72 md:max-h-80 rounded-lg">
+          <img class="w-full h-auto" src="assets/screenshot.png" alt="near school screenshot">
+        </div>
+        <div class="details">
+
+          <h4 class="project-title">Near School</h4>
+          <div class="flex-inline space-x-3 text-sm my-2">
+            <span class="uppercase font-bold">
+              canopy
+            </span>
+            
+            <span class="text-capitalize text-canopy">
+              &bull; front end
+            </span>
+            <span class="text-capitalize text-canopy">
+              2020
+            </span>
+          </div>
+          <p class="text-sm">I created a fully responsive Website for a directory of schools.
+            This project was built with HTML, CSS, and JS.
+            It was very challenging but fun as well and helped me test my skills in HTML and CSS mainly flexbox and css grid.
+            I guess there some areas I can improve soon, but overall I am very proud of how my knowledge about responsive development has grown by building it.</p>
+          <div class="flex-inline space-x-3 my-5">
+            <span class="tech">html</span>
+            <span class="tech">css</span>
+            <span class="tech">javascript</span>
+          </div>
+          <hr class="my-2 md:hidden">
+  
+          <div class="flex w-full space-x-2 my-5">
+            <a href="https://helciodev.github.io/directory-of-schools/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
+            <a href="https://github.com/helciodev/directory-of-schools" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
+          </div>
+        </div>
+      </div>   
+      <!-- project two -->                                                                       
+      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 my-16 p-5 border-gray-100 rounded-lg
+      bg-white">
+        <div class="p-3 bg-black md:order-last max-h-72 md:max-h-80 rounded-lg">
+          <img class="w-full h-auto" src="assets/the-next-web-clone.png" alt="near school screenshot">
+        </div>
+        <div class="details">
+
+          <h4 class="project-title">The Next Web</h4>
+          <div class="flex-inline space-x-3 text-sm my-2">
+            <span class="uppercase font-bold">
+              canopy
+            </span>
+            
+            <span class="text-capitalize text-canopy">
+              &bull; front end
+            </span>
+            <span class="text-capitalize text-canopy">
+              2020
+            </span>
+          </div>
+          <p class="text-sm">This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.</p>
+          <div class="flex-inline space-x-3 my-5">
+            <span class="tech">html</span>
+            <span class="tech">css</span>
+          </div>
+          <hr class="my-2 md:hidden">
+  
+          <div class="flex w-full space-x-2 my-5">
+            <a href="https://helciodev.github.io/directory-of-schools/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
+            <a href="https://arreytabe.github.io/The-Next-Web-Clone/" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
+          </div>
+        </div>
+      </div>  
+      <!-- project three -->                                                                                                          <!--  -->
+      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 p-5 my-16 border-gray-100 rounded-lg
+      bg-white">
+        <div class="p-3 bg-newsWeek max-h-72 md:max-h-80 rounded-lg">
+          <img class="w-full h-auto" src="assets/news-week.png" alt="near school screenshot">
+        </div>
+        <div class="details">
+
+          <h4 class="project-title">Newsweek Clone</h4>
+          <div class="flex-inline space-x-3 text-sm my-2">
+            <span class="uppercase font-bold">
+              canopy
+            </span>
+            
+            <span class="text-capitalize text-canopy">
+              &bull; front end
+            </span>
+            <span class="text-capitalize text-canopy">
+              2020
+            </span>
+          </div>
+          <p class="text-sm">This project consists of replicating the The newsweek site home page putting emphasis on using the css framework Bootstrap and how the page behaves differently depending on the size of the screen where the website is rendered.</p>
+          <div class="flex-inline space-x-3 my-5">
+            <span class="tech">html</span>
+            <span class="tech">css</span>
+            <span class="tech">javascript</span>
+          </div>
+          <hr class="my-2 md:hidden">
+  
+          <div class="flex w-full space-x-2 my-5">
+            <a href="https://helciodev.github.io/newsweek-site-clone/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
+            <a href="https://github.com/helciodev/newsweek-site-clone" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
+          </div>
+        </div>
+      </div>                                                                                                                 
+
+    </section>
+    <section id="about-me" class="grid grid-cols-1 gap-4 md:grid-cols-2 px-10 md:px-16 py-28 md:pb-24  rounded-tr-xxl bg-white">
+      <!-- first-child -->
+      <div>
+
+        <h4 class=" project-title">
+          <span class="block">
+          About
+        </span>
+        <span class="block">
+          Myself
+        </span>
+      </h4>
+      <p class="text-sm">I am a software developer from Angola currently open to new opportunities, I enjoy creating intuitive, well-designed, responsive projects, a very good user experience is what comes to my mind whenever I start building a project that anyone besides me will use.</p>
+      <p class="font-body font-semibold uppercase text-connect my-3">
+        let's connect
+      </p>
+
+      <div class="flex space-x-4 text-icons text-3xl w-6/12">
+        <a class="hover:text-blue-500 animation-social" href="https://www.linkedin.com/in/helcio-andre/">
+          <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
+        </a>
+        <a class="hover:text-black animation-social" href="https://github.com/helciodev">
+          <span class="iconify" data-icon="teenyicons:github-solid" data-inline="false"></span>
+        </a>
+        <a class="hover:text-blue-700 animation-social" href="https://twitter.com/helcio_bruno">
+          <span class="iconify" data-icon="codicon:twitter" data-inline="false"></span>
+        </a>
+      </div>
+
+      <a href="https://docs.google.com/document/d/1FFtoORyL-9cVhwyjsH98sXjO7wyEPfQzdH053lXGfjI/edit" class="project-btn mt-5" target="_blank">
+        Get my resume
+      </a>
+      </div>
+      <!-- second-child -->
+      <div class="space-y-4 md:pt-10">
+        <!-- lang -->
+        <div id="lang" class="capitalize w-full flex md:text-3xl items-center justify-between">
+          languages
+          <span id="lang-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
+              &#129170;
+          </span>
+        </div>
+        <div id="dropdown-lang" class="hidden transition-transform transform duration-200 mt-5">
+          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="logos:javascript" data-inline="false"></span>
+              javascript
+            </li>
+            <li class="about-items space-x-2">
+              <span class="iconify about-items-icon" data-icon="vscode-icons:file-type-css" data-inline="false"></span>
+              <span class="iconify about-items-icon" data-icon="vscode-icons:file-type-html" data-inline="false"></span>
+              HTML CSS
+            </li>
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="logos:ruby" data-inline="false"></span>
+              Ruby
+            </li>
+          </ul>
+        </div>
+        <!-- framework -->
+        <div id="lang" class="capitalize w-full md:text-3xl flex items-center justify-between">
+          frameworks
+          <span id="framework-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
+              &#129170;
+          </span>
+        </div>
+        <div id="dropdown-framework" class="hidden transition-all duration-200 mt-5">
+          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="vscode-icons:file-type-rails" data-inline="false"></span>
+              Rails
+            </li>
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="logos:bootstrap" data-inline="false"></span>
+              Bootstrap
+            </li>
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="logos:tailwindcss-icon" data-inline="false"></span>
+              tailwindcss
+            </li>
+          </ul>
+        </div>
+          <!-- skills -->
+        <div id="lang" class="capitalize w-full flex md:text-3xl items-center justify-between">
+          skills
+          <span id="skills-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
+              &#129170;
+          </span>
+        </div>
+        <div id="dropdown-skills" class="hidden transition-all duration-200 mt-5">
+          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="logos:git-icon" data-inline="false"></span>
+              Git
+            </li>
+            <li class="about-items space-x-2">
+              <span class="iconify about-items-icon mr-2" data-icon="teenyicons:github-solid" data-inline="false"></span>
+              github
+            </li>
+            <li class="about-items">
+              <span class="iconify about-items-icon mr-2" data-icon="whh:remotemysql" data-inline="false"></span>
+    
+              Remote collaboration
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact-me" class="px-3 text-center py-16 rounded-tl-xxl rotat  bg-hover">
+      <h3 class="text-white text-3xl font-bold                                     ">Contact me</h3>
+      <p class="text-center mx-auto text-white text-xl w-72 mt-4 mb-8 md:w-96">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+
+      <div class="form md:w-1/3 md:mx-auto">
+        <form action="" class="flex flex-col">
+          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Full name">
+          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Email">
+          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Phone number">
+          <textarea class="w-full rounded-lg p-3" rows="6" placeholder="Write your message here"></textarea>
+        </div>
+        <button class="text-logo mt-4 hover:bg-gray-300 capitalize px-3 py-3 bg-white rounded-md ml-0 inline-block w-1/4" type="submit" href="/">get in touch</button>
+        </form>
+      </div>
+    </section>
+  </main>                                   
+  <script src="js/smooth-scroll.js"></script>
+</body>
+</html>                                                                      

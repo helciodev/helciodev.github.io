@@ -1,0 +1,28 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Helcio Bruno Da Cunha Andre",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "NODE_ENV=production src/style.css -o docs/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helciodev/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helciodev/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/helciodev/my-portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3"
+  }
+}
