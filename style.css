@@ -938,7 +938,7 @@ video {
 
 .text-connect{
   --tw-text-opacity: 1;
-  color: rgba(127, 140, 255, var(--tw-text-opacity));
+  color: rgba(26, 46, 224, var(--tw-text-opacity));
 }
 
 .text-paragraphs{
@@ -948,7 +948,7 @@ video {
 
 .text-canopy{
   --tw-text-opacity: 1;
-  color: rgba(122, 134, 154, var(--tw-text-opacity));
+  color: rgba(72, 81, 96, var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover{
@@ -1192,7 +1192,7 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(96, 112, 255, var(--tw-text-opacity))
+  color: rgba(36, 51, 188, var(--tw-text-opacity))
 }
 
 .project-btn > :not([hidden]) ~ :not([hidden]){
