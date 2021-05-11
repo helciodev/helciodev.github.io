@@ -301,17 +301,17 @@
       <p class="text-center mx-auto text-white text-xl w-72 mt-4 mb-8 md:w-96">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
 
       <div class="form md:w-1/3 md:mx-auto">
-        <form id="helciodev" action="" class="flex flex-col">
-          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Full name">
-          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Email">
-          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Phone number">
-          <textarea class="w-full rounded-lg p-3" rows="6" placeholder="Write your message here"></textarea>
+        <form id="helciodev" action="https://kwes.io/api/foreign/forms/VbAq1XwUIEZmdbeeV3DA" class="flex flex-col kwes-form">
+          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Full name" rules="required|min:5">
+          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="name" placeholder="Email" rules="required">
+          <textarea class="w-full rounded-lg p-3" rows="6" placeholder="Write your message here" rules="required|min:15"></textarea>
         </div>
         <button class="text-logo mt-4 hover:bg-gray-300 capitalize px-3 py-3 bg-white rounded-md ml-0 inline-block w-1/4" type="submit" href="/">get in touch</button>
         </form>
       </div>
     </section>
-  </main>                                   
+  </main>
+  <script src="https://kwes.io/v2/kwes-script.js" defer></script>                           
   <script src="js/smooth-scroll.js"></script>
 </body>
 </html>                                                                      
