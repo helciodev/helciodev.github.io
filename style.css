@@ -623,6 +623,11 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+}
+
 .bg-body{
   --tw-bg-opacity: 1;
   background-color: rgba(229, 229, 229, var(--tw-bg-opacity));
@@ -1311,6 +1316,11 @@ video {
 
 .navigation {
   overflow-y: hidden;
+  z-index: 10;
+}
+
+body {
+  z-index: 3;
 }
 
 .navigationbutton {
