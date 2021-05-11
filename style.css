@@ -1316,7 +1316,7 @@ video {
 
 .navigation {
   overflow-y: hidden;
-  z-index: 10;
+  z-index: 1;
 }
 
 body {
@@ -1480,6 +1480,11 @@ body {
     order: 9999;
   }
 
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1544,6 +1549,11 @@ body {
 }
 
 @media (min-width: 1024px){
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:max-h-full{
     max-height: 100%;
   }
