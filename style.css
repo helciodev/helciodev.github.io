@@ -1485,6 +1485,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1549,11 +1554,6 @@ body {
 }
 
 @media (min-width: 1024px){
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .lg\:max-h-full{
     max-height: 100%;
   }
