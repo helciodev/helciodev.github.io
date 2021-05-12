@@ -17,10 +17,14 @@ $(".animate-bounce a").on("click", function (e) {
   $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
 });
 
+// divs
+const lang = document.getElementById('lang')
+const frameWork = document.getElementById('framework');
+const skills = document.getElementById('skills')
 // arrows
-const lang = document.getElementById('lang-arrow')
-const frameWork = document.getElementById('framework-arrow');
-const skills = document.getElementById('skills-arrow');
+const langArrow = document.getElementById('lang-arrow');
+const frameWorkArrow = document.getElementById('framework-arrow');
+const skillsArrow = document.getElementById('skills-arrow');
 
 // dropdowns
 const dropdownLang = document.getElementById('dropdown-lang');
@@ -33,7 +37,7 @@ lang.addEventListener('click' ,showLang)
 
 function showLang() {
   dropdownLang.classList.toggle('hidden')
-  this.classList.toggle('rotate')
+  langArrow.classList.toggle('rotate')
 
 }
 
@@ -41,14 +45,14 @@ frameWork.addEventListener('click', showFrameWorks)
 
 function showFrameWorks () {
   dropdownFrame.classList.toggle('hidden')
-  this.classList.toggle('rotate')
+  frameWorkArrow.classList.toggle('rotate')
 }
 
 skills.addEventListener('click', showSkills)
 
 function showSkills () {
   dropdownSkills.classList.toggle('hidden')
-  this.classList.toggle('rotate')
+  skillsArrow.classList.toggle('rotate')
 }
 
 const navigationLinks = Array.from( document.getElementsByClassName('navigationlink'))

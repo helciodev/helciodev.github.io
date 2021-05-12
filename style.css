@@ -653,6 +653,11 @@ video {
   background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
 
+.hover\:bg-body:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 229, 229, var(--tw-bg-opacity));
+}
+
 .border-gray-100{
   --tw-border-opacity: 1;
   border-color: rgba(243, 244, 246, var(--tw-border-opacity));
@@ -681,6 +686,10 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .cursor-pointer{
@@ -850,6 +859,11 @@ video {
 
 .p-5{
   padding: 1.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-3{
