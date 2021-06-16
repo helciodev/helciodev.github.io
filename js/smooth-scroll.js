@@ -17,7 +17,7 @@ $(".animate-bounce a").on("click", function (e) {
   $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
 });
 
-// divs
+// div
 const lang = document.getElementById('lang')
 const frameWork = document.getElementById('framework');
 const skills = document.getElementById('skills')
@@ -26,7 +26,7 @@ const langArrow = document.getElementById('lang-arrow');
 const frameWorkArrow = document.getElementById('framework-arrow');
 const skillsArrow = document.getElementById('skills-arrow');
 
-// dropdowns
+// dropdown
 const dropdownLang = document.getElementById('dropdown-lang');
 
 const dropdownFrame = document.getElementById('dropdown-framework');
