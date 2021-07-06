@@ -248,6 +248,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
@@ -633,19 +638,14 @@ video {
   background-color: rgba(229, 229, 229, var(--tw-bg-opacity));
 }
 
-.bg-one{
-  --tw-bg-opacity: 1;
-  background-color: rgba(212, 86, 73, var(--tw-bg-opacity));
-}
-
 .bg-hover{
   --tw-bg-opacity: 1;
   background-color: rgba(96, 112, 255, var(--tw-bg-opacity));
 }
 
-.bg-newsWeek{
+.bg-default{
   --tw-bg-opacity: 1;
-  background-color: rgba(247, 34, 16, var(--tw-bg-opacity));
+  background-color: rgba(52, 69, 99, var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-300:hover{
