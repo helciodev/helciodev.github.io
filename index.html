@@ -1,366 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="image" property="og:image" content="https://raw.githubusercontent.com/helciodev/helciodev.github.io/master/assets/site-image-preview.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelcioDev</title>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <!-- hello there welcome to my portfolio, I built this baby with 💖 and lot of css from the tailwind framework and of course a bit of the magical ingredient called javascript-->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <meta name="description" content="I am Helcio Andre, a 31 front-end developer from">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W0FCBHB0W6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://raw.githubusercontent.com/helciodev/helciodev.github.io/master/assets/site-image-preview.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelcioDev</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- hello there welcome to my portfolio, I built this baby with 💖 and lot of css from the tailwind framework and of course a bit of the magical ingredient called javascript-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta
+      name="description"
+      content="I am Helcio Andre, a 31 front-end developer from"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W0FCBHB0W6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-W0FCBHB0W6');
-</script>
-</head>
-<body class="antialiased bg-body text-default">
-<div class="navigation md:hidden bg-blue-700">
-  <input type="checkbox" class=" hidden navigationcheckbox" id="navi-toggle">
-  <label for="navi-toggle"class="navigationbutton flex items-center justify-center"><span class="navigationicon"></span></label>
-<!-- hello there welcome to my portfolio, I build this baby with 💖 and lot of css from the tailwind framework and of course a bit of the magical ingredient called javascript-->
-  <div class="navigationbackground transition-transform duration-700">&nbsp;</div>
-  <nav class="navigationnav transition-all duration-700">
-    <ul class="navigationlist space-y-3">
-      <li class="navigationitem"><a href="#projects" class="navigationlink">Projects</a></li>
-      <li class="navigationitem"><a href="#about-me" class="navigationlink">About me</a></li>
-      <li class="navigationitem"><a href="#contact-me" class="navigationlink">Contact me</a></li>
-    </ul>
-  </nav>
-</div>
-  <header class="md:flex hidden sticky top-0 filter drop-shadow-lg z-10 bg-white items-center px-md-3 justify-between md:px-5 py-5 px-5">
-    <a href="https://helciodev.me/" class="logo font-black text-2xl font-bold uppercase text-logo">
-      HelcioDev
-    </a>
-    <button class="nav-toggle text-logo md:hidden">
-      <span class="iconify" data-icon="codicon:three-bars" data-inline="false"></span>
-    </button>
-    <nav class="nav sm hidden md:block">
-      <ul class="nav__list text-xl font-bold flex space-x-6 w-64 text-default">
-        <li class="nav__item hover:text-logo text-default"><a href="#projects">Portfolio</a></li>
-        <li class="nav__item hover:text-logo"><a href="#about-me">About</a></li>
-        <li class="nav__item hover:text-logo"><a href="#contact-me">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- hero -->
-    <section id="hero" class="hero pt-10">
-      <div class="md:block mx-auto w-10/12">
-        <h1 class="hero__heading font-body text-3xl font-bold md:text-5xl text-dark">
-        <span class="block capitalize">hello 👋🏽</span>
-        <span class="block md:inline">I am <span class=" text-logo">Helcio</span> </span>
-        <span class="block">Glad to see <span class="text-logo">you!</span> </span>
-        </h1>
-        <p class="font-body mt-5 text-base text-paragraphs md:text-2xl md:w-3/4">
-          I’m a software <span class="text-logo">developer</span>! I can help you build a product , feature or website Look through some of my work <br class="md:hidden">
-          and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-        </p>
-  
-        <p class="font-body font-semibold uppercase text-connect my-4">
-          let's connect
-        </p>
-  
-        <div class="flex content-between space-x-4 text-icons text-3xl w-6/12">
-          <a class="hover:text-blue-500 animation-social" target="_blank" href="https://www.linkedin.com/in/helcio-andre/">
-            <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
-          </a>
-          <a class="hover:text-black animation-social" target="_blank" href="https://github.com/helciodev">
-            <span class="iconify" data-icon="teenyicons:github-solid" data-inline="false"></span>
-          </a>
-          <a class="hover:text-blue-700 animation-social" target="_blank" href="https://twitter.com/helcio_bruno">
-            <span class="iconify" data-icon="codicon:twitter" data-inline="false"></span>
-          </a>
-        </div>
+      gtag("config", "G-W0FCBHB0W6");
+    </script>
+  </head>
+  <body class="antialiased bg-body text-default">
+    <div class="navigation md:hidden bg-blue-700">
+      <input
+        type="checkbox"
+        class="hidden navigationcheckbox"
+        id="navi-toggle"
+      />
+      <label
+        for="navi-toggle"
+        class="navigationbutton flex items-center justify-center"
+        ><span class="navigationicon"></span
+      ></label>
+      <!-- hello there welcome to my portfolio, I build this baby with 💖 and lot of css from the tailwind framework and of course a bit of the magical ingredient called javascript-->
+      <div class="navigationbackground transition-transform duration-700">
+        &nbsp;
       </div>
-      <!-- <div class="animate-bounce mt-44 flex justify-center">
+      <nav class="navigationnav transition-all duration-700">
+        <ul class="navigationlist space-y-3">
+          <li class="navigationitem">
+            <a href="#projects" class="navigationlink">Projects</a>
+          </li>
+          <li class="navigationitem">
+            <a href="#about-me" class="navigationlink">About me</a>
+          </li>
+          <li class="navigationitem">
+            <a href="#contact-me" class="navigationlink">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header
+      class="
+        md:flex
+        hidden
+        sticky
+        top-0
+        filter
+        drop-shadow-lg
+        z-10
+        bg-white
+        items-center
+        px-md-3
+        justify-between
+        md:px-5
+        py-5
+        px-5
+      "
+    >
+      <a
+        href="https://helciodev.me/"
+        class="logo font-black text-2xl font-bold uppercase text-logo"
+      >
+        HelcioDev
+      </a>
+      <button class="nav-toggle text-logo md:hidden">
+        <span
+          class="iconify"
+          data-icon="codicon:three-bars"
+          data-inline="false"
+        ></span>
+      </button>
+      <nav class="nav sm hidden md:block">
+        <ul
+          class="nav__list text-xl font-bold flex space-x-6 w-64 text-default"
+        >
+          <li class="nav__item hover:text-logo text-default">
+            <a href="#projects">Portfolio</a>
+          </li>
+          <li class="nav__item hover:text-logo">
+            <a href="#about-me">About</a>
+          </li>
+          <li class="nav__item hover:text-logo">
+            <a href="#contact-me">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section id="hero" class="hero pt-10">
+        <div class="md:block mx-auto w-10/12">
+          <h1
+            class="
+              hero__heading
+              font-body
+              text-3xl
+              font-bold
+              md:text-5xl
+              text-dark
+            "
+          >
+            <span class="block capitalize">hello 👋🏽</span>
+            <span class="block md:inline"
+              >I am <span class="text-logo">Helcio</span>
+            </span>
+            <span class="block"
+              >Glad to see <span class="text-logo">you!</span>
+            </span>
+          </h1>
+          <p
+            class="
+              font-body
+              mt-5
+              text-base text-paragraphs
+              md:text-2xl md:w-3/4
+            "
+          >
+            I’m a web <span class="text-logo">developer </span>based in Luanda,
+            Angola <br class="md:hidden" />
+            coding is my passion and my new professional career focus,
+            developing applications for the web has become my drive.
+          </p>
+
+          <p class="font-body font-semibold uppercase text-connect my-4">
+            let's connect
+          </p>
+
+          <div
+            class="flex content-between space-x-4 text-icons text-3xl w-6/12"
+          >
+            <a
+              class="hover:text-blue-500 animation-social"
+              target="_blank"
+              href="https://www.linkedin.com/in/helcio-andre/"
+            >
+              <span
+                class="iconify"
+                data-icon="akar-icons:linkedin-fill"
+                data-inline="false"
+              ></span>
+            </a>
+            <a
+              class="hover:text-black animation-social"
+              target="_blank"
+              href="https://github.com/helciodev"
+            >
+              <span
+                class="iconify"
+                data-icon="teenyicons:github-solid"
+                data-inline="false"
+              ></span>
+            </a>
+            <a
+              class="hover:text-blue-700 animation-social"
+              target="_blank"
+              href="https://twitter.com/helcio_bruno"
+            >
+              <span
+                class="iconify"
+                data-icon="codicon:twitter"
+                data-inline="false"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="animate-bounce mt-44 flex justify-center">
         <a href="#projects" class="animate-bounce text-7xl text-default">	
           &#129171;</a>
       </div> -->
-    </section>
-    <section id="projects" class="p-3 md:p-10 my-10">
-      <!-- project one -->
-     
-      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 my-16 p-5 border-gray-100 rounded-lg
-      bg-white">
-        <div class="p-3 bg-default max-h-72 flex md:justify-center items-center md:max-h-80 lg:max-h-full rounded-lg">
-          <img class="w-full h-auto" src="assets/popcorn-and-chill.png" alt="popcorn and chill thumbnail">
-        </div>
-        <div class="details">
+      </section>
+      <section id="projects" class="p-3 md:p-10 my-10">
+        <!-- project one -->
 
-          <h4 class="project-title">Popcorn-and-chill</h4>
-          <div class="flex-inline space-x-3 text-sm my-2">
-            <span class="uppercase font-bold">
-              canopy
-            </span>
-            
-            <span class="text-capitalize text-canopy">
-              &bull; front end
-            </span>
-            <span class="text-capitalize text-canopy">
-              2021
-            </span>
+        <div
+          class="
+            border
+            grid grid-cols-1
+            gap-4
+            md:grid-cols-2
+            my-16
+            p-5
+            border-gray-100
+            rounded-lg
+            bg-white
+          "
+        >
+          <div
+            class="
+              p-3
+              bg-default
+              max-h-72
+              flex
+              md:justify-center
+              items-center
+              md:max-h-80
+              lg:max-h-full
+              rounded-lg
+            "
+          >
+            <img
+              class="w-full h-auto"
+              src="assets/popcorn-and-chill.png"
+              alt="popcorn and chill thumbnail"
+            />
           </div>
-          <p class="text-sm md:text-lg">This project consumes data from the TMDB (The Movie Data Base) API, is a react project built using redux and react hooks it was a challenging project, I had lots of fun while building it, and it helped me consolidate my React and Redux knowledge.</p>
-          <div class="flex-inline space-x-3 my-5">
-            <span class="tech">React</span>
-            <span class="tech">Redux</span>
-            <span class="tech">CSS modules</span>
-            <span class="tech">Jest</span>
-          </div>
-          <hr class="my-2 md:hidden">
-  
-          <div class="flex w-full space-x-2 my-5">
-            <a href="https://popcorn-and-chill.netlify.app/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
-            <a href="https://github.com/helciodev/popcorn-and-chill" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
-          </div>
-        </div>
-      </div>   
-      <!-- project two -->                                                                       
-      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 my-16 p-5 border-gray-100 rounded-lg
-      bg-white">
-        <div class="p-3 bg-default md:order-last flex md:justify-center items-center max-h-72 md:max-h-80 lg:max-h-full rounded-lg">
-          <img class="w-full h-auto" src="assets/app-screenshot.png" alt="the weather app-screenshot">
-        </div>
-        <div class="details">
+          <div class="details">
+            <h4 class="project-title">Popcorn-and-chill</h4>
+            <div class="flex-inline space-x-3 text-sm my-2">
+              <span class="uppercase font-bold"> canopy </span>
 
-          <h4 class="project-title">Weather App</h4>
-          <div class="flex-inline space-x-3 text-sm my-2">
-            <span class="uppercase font-bold">
-              canopy
-            </span>
-            
-            <span class="text-capitalize text-canopy">
-              &bull; front end
-            </span>
-            <span class="text-capitalize text-canopy">
-              2021
-            </span>
-          </div>
-          <p class="text-sm md:text-lg">A weather app that gets user location and fetches the current weather from the open weather API. The user can search up from more than 220 cities around the world, user can also choose which unit the temperature will be displayed by pressing the toggle button.</p>
-          <div class="flex-inline space-x-3 my-5">
-            <span class="tech">html</span>
-            <span class="tech">css</span>
-            <span class="tech">javascript</span>
-            <span class="tech">webpack</span>
-          </div>
-          <hr class="my-2 md:hidden">
-  
-          <div class="flex w-full space-x-2 my-5">
-            <a href="https://helciodev-weather-app.netlify.app/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
-            <a href="https://github.com/helciodev/weather-app" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
-          </div>
-          
-        </div>
-      </div>  
-      <!-- project three -->                                                                                                          <!--  -->
-      <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 p-5 my-16 border-gray-100 rounded-lg
-      bg-white">
-        <div class="p-3 bg-default flex md:justify-center items-center max-h-72 md:max-h-80 lg:max-h-full rounded-lg">
-          <img class="w-full h-auto" src="assets/todo-list.png" alt="todo list">
-        </div>
-        <div class="details">
+              <span class="text-capitalize text-canopy">
+                &bull; front end
+              </span>
+              <span class="text-capitalize text-canopy"> 2021 </span>
+            </div>
+            <p class="text-sm md:text-lg">
+              This project is was one the projects I had more fun building so
+              far, building it helped get from tutorials to build my own react
+              application, I love movies so consuming data from the TMDB (the
+              movie database) API was a no brainier for me.
+            </p>
+            <h4 class="md:text-2xl font-bold mt-4">lessons learned</h4>
+            <p class="text-sm md:text-lg">
+              What is react, difference between stateful and stateless
+              components, dynamic rendering in react, react hooks like UseState,
+              useEffect, class components and function components, styling react
+              components with css modules, redux although not implemented in
+              this project redux/toolkit.
+            </p>
+            <div class="flex-inline space-x-3 my-5">
+              <span class="tech">React</span>
+              <span class="tech">Redux</span>
+              <span class="tech">CSS modules</span>
+              <span class="tech">Jest</span>
+            </div>
+            <hr class="my-2 md:hidden" />
 
-          <h4 class="project-title">Todo App</h4>
-          <div class="flex-inline space-x-3 text-sm my-2">
-            <span class="uppercase font-bold">
-              canopy
-            </span>
-            
-            <span class="text-capitalize text-canopy">
-              &bull; front end
-            </span>
-            <span class="text-capitalize text-canopy">
-              2021
-            </span>
-          </div>
-          <p class="text-sm md:text-lg">A todo app where the user can Add/Edit/Delete todos. Todos are saved to the localStorage, so the user can access his lists and tasks anytime.</p>
-          <div class="flex-inline space-x-3 my-5">
-            <span class="tech">html</span>
-            <span class="tech">css</span>
-            <span class="tech">javascript</span>
-            <span class="tech">webpack</span>
-          </div>
-          <hr class="my-2 md:hidden">
-  
-          <div class="flex w-full space-x-2 my-5">
-            <a href="https://helciodev-todo-app.netlify.app/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
-            <a href="https://github.com/helciodev/todo-list-app" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
+            <div class="flex w-full space-x-2 my-5">
+              <a
+                href="https://popcorn-and-chill.netlify.app/"
+                class="project-btn"
+                target="_blank"
+              >
+                See Live
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="mdi:web"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://github.com/helciodev/popcorn-and-chill"
+                class="project-btn"
+                target="_blank"
+              >
+                See Source
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="teenyicons:github-solid"
+                  data-inline="false"
+                ></span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>                                                                                                                 
+        <!-- project two -->
+        <div
+          class="
+            border
+            grid grid-cols-1
+            gap-4
+            md:grid-cols-2
+            my-16
+            p-5
+            border-gray-100
+            rounded-lg
+            bg-white
+          "
+        >
+          <div
+            class="
+              p-3
+              bg-default
+              md:order-last
+              flex
+              md:justify-center
+              items-center
+              max-h-72
+              md:max-h-80
+              lg:max-h-full
+              rounded-lg
+            "
+          >
+            <img
+              class="w-full h-auto"
+              src="assets/app-screenshot.png"
+              alt="the weather app-screenshot"
+            />
+          </div>
+          <div class="details">
+            <h4 class="project-title">Weather App</h4>
+            <div class="flex-inline space-x-3 text-sm my-2">
+              <span class="uppercase font-bold"> canopy </span>
 
-<!-- project four --> 
-    <div class="border grid grid-cols-1 gap-4 md:grid-cols-2 my-16 p-5 border-gray-100 rounded-lg
-      bg-white">
-        <div class="p-3 bg-default md:order-last flex md:justify-center items-center max-h-72 md:max-h-80 lg:max-h-full rounded-lg">
-          <img class="w-full h-auto" src="assets/project-main-page-shot.png" alt="near school screenshot">
-        </div>
-        <div class="details">
+              <span class="text-capitalize text-canopy">
+                &bull; front end
+              </span>
+              <span class="text-capitalize text-canopy"> 2021 </span>
+            </div>
+            <p class="text-sm md:text-lg">
+              A weather app that gets user location and fetches the current
+              weather from the open weather API. The user can search up from
+              more than 220 cities around the world, user can also choose which
+              unit the temperature will be displayed by pressing the toggle
+              button.
+            </p>
+            <h4 class="md:text-2xl font-bold mt-4">lessons learned</h4>
+            <p class="text-sm md:text-lg">
+              Promises, more precisely async await, testing in react, webpack
+              bundler, imports and exports in javascript, implementing the MVC
+              pattern in a vanilla javascript application, some techniques for
+              DOM manipulation like appendChild and others.
+            </p>
+            <div class="flex-inline space-x-3 my-5">
+              <span class="tech">html</span>
+              <span class="tech">css</span>
+              <span class="tech">javascript</span>
+              <span class="tech">webpack</span>
+            </div>
+            <hr class="my-2 md:hidden" />
 
-          <h4 class="project-title">Twitter Redesign</h4>
-          <div class="flex-inline space-x-3 text-sm my-2">
-            <span class="uppercase font-bold">
-              canopy
-            </span>
-            
-            <span class="text-capitalize text-canopy">
-              &bull; backend
-            </span>
-            <span class="text-capitalize text-canopy">
-              2020
+            <div class="flex w-full space-x-2 my-5">
+              <a
+                href="https://helciodev-weather-app.netlify.app/"
+                class="project-btn"
+                target="_blank"
+              >
+                See Live
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="mdi:web"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://github.com/helciodev/weather-app"
+                class="project-btn"
+                target="_blank"
+              >
+                See Source
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="teenyicons:github-solid"
+                  data-inline="false"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- project three -->
+        <!--  -->
+        <div
+          class="
+            border
+            grid grid-cols-1
+            gap-4
+            md:grid-cols-2
+            p-5
+            my-16
+            border-gray-100
+            rounded-lg
+            bg-white
+          "
+        >
+          <div
+            class="
+              p-3
+              bg-default
+              flex
+              md:justify-center
+              items-center
+              max-h-72
+              md:max-h-80
+              lg:max-h-full
+              rounded-lg
+            "
+          >
+            <img
+              class="w-full h-auto"
+              src="assets/todo-list.png"
+              alt="todo list"
+            />
+          </div>
+          <div class="details">
+            <h4 class="project-title">Todo App</h4>
+            <div class="flex-inline space-x-3 text-sm my-2">
+              <span class="uppercase font-bold"> canopy </span>
+
+              <span class="text-capitalize text-canopy">
+                &bull; front end
+              </span>
+              <span class="text-capitalize text-canopy"> 2021 </span>
+            </div>
+            <p class="text-sm md:text-lg">
+              A todo app where the user can Add/Edit/Delete todos. Todos are
+              saved to the localStorage, so the user can access his lists and
+              tasks anytime.
+            </p>
+            <h4 class="md:text-2xl font-bold mt-4">lessons learned</h4>
+            <p class="text-sm md:text-lg">
+              Using the localStorage web API, factory functions in javascript,
+              DOM manipulation.
+            </p>
+            <div class="flex-inline space-x-3 my-5">
+              <span class="tech">html</span>
+              <span class="tech">css</span>
+              <span class="tech">javascript</span>
+              <span class="tech">webpack</span>
+            </div>
+            <hr class="my-2 md:hidden" />
+
+            <div class="flex w-full space-x-2 my-5">
+              <a
+                href="https://helciodev-todo-app.netlify.app/"
+                class="project-btn"
+                target="_blank"
+              >
+                See Live
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="mdi:web"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://github.com/helciodev/todo-list-app"
+                class="project-btn"
+                target="_blank"
+              >
+                See Source
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="teenyicons:github-solid"
+                  data-inline="false"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- project four -->
+        <div
+          class="
+            border
+            grid grid-cols-1
+            gap-4
+            md:grid-cols-2
+            my-16
+            p-5
+            border-gray-100
+            rounded-lg
+            bg-white
+          "
+        >
+          <div
+            class="
+              p-3
+              bg-default
+              md:order-last
+              flex
+              md:justify-center
+              items-center
+              max-h-72
+              md:max-h-80
+              lg:max-h-full
+              rounded-lg
+            "
+          >
+            <img
+              class="w-full h-auto"
+              src="assets/project-main-page-shot.png"
+              alt="near school screenshot"
+            />
+          </div>
+          <div class="details">
+            <h4 class="project-title">Twitter Redesign</h4>
+            <div class="flex-inline space-x-3 text-sm my-2">
+              <span class="uppercase font-bold"> canopy </span>
+
+              <span class="text-capitalize text-canopy"> &bull; backend </span>
+              <span class="text-capitalize text-canopy"> 2020 </span>
+            </div>
+            <p class="text-sm md:text-lg">
+              This a project build on Ruby on Rails this project mocks some of
+              twitter features, this project was one of the most challeging ones
+              I had so far, but it helped learn a lot about Ruby on Rails
+              framework.
+            </p>
+            <h4 class="md:text-2xl font-bold mt-4">lessons learned</h4>
+            <p class="text-sm md:text-lg">
+              What is the Ruby on Rails, why is it so popular, associations in
+              Rails, rendering, manipulating the database, testing with rspec,
+              shoulda-matchers.
+            </p>
+
+            <div class="flex-inline space-x-3 my-5">
+              <span class="tech">html</span>
+              <span class="tech">css</span>
+              <span class="tech">rpsec</span>
+              <span class="tech">ruby on rails</span>
+            </div>
+            <hr class="my-2 md:hidden" />
+
+            <div class="flex w-full space-x-2 my-5">
+              <a
+                href="https://ha-twitter-redesign.herokuapp.com/"
+                class="project-btn"
+                target="_blank"
+              >
+                See Live
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="mdi:web"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://github.com/helciodev/twittter-redesign"
+                class="project-btn"
+                target="_blank"
+              >
+                See Source
+                <span
+                  class="iconify ml-2 text-xl"
+                  data-icon="teenyicons:github-solid"
+                  data-inline="false"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="about-me"
+        class="
+          grid grid-cols-1
+          gap-4
+          md:grid-cols-2
+          px-10
+          md:px-16
+          py-28
+          md:pb-24
+          rounded-tr-xxl
+          bg-white
+        "
+      >
+        <!-- first-child -->
+        <div>
+          <h4 class="project-title">
+            <span class="block"> About </span>
+            <span class="block"> Myself </span>
+          </h4>
+          <p class="text-sm md:text-lg">
+            My interest in tech started when I was little. Since I had the
+            chance to play video games for the first time it only grew, I
+            started learning how to use a computer and watch sci-fi movies.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            As I grew I went to University to study science computer
+            engineering, as I got my first laptop and regular access to the
+            internet.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            My curiosity only grew, during my last year at University, I asked
+            myself if I can call myself an engineer and the answer was painful
+            as it is was no.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            I couldn't finish University but did not stop me from starting to
+            look online on how to learn programming from websites like
+            SitePoint.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            Unfortunately, back then my English was not good enough as I was
+            trying to learn things in English.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            I had to stop learning and started working.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            I couldn't work with something I love and it was not challenging and
+            compensating enough to stay at it, so in 2015 I decided to leave.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            I restarted learning web development again, after learning Bootstrap
+            and HTML, CSS I decided to contact local companies to build their
+            websites with little to no success.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            so in 2018 I decided to learn more in depth the fundamentals like
+            HTML, CSS, javascript and get a remote job to grow as a dev.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            But learning alone is tough, so I decided to join an online Bootcamp
+            called Microverse to have the accountability I felt was missing and
+            it was worth it, I could learn and meet amazing and humble people
+            from many countries around the world.
+          </p>
+          <br />
+          <p class="text-sm md:text-lg">
+            I believe that while we are alive we have to try and be our best
+            versions every day!
+          </p>
+          <br />
+          <p class="font-body font-semibold uppercase text-connect my-3">
+            let's connect
+          </p>
+
+          <div class="flex space-x-4 text-icons text-3xl w-6/12">
+            <a
+              class="hover:text-blue-500 animation-social"
+              href="https://www.linkedin.com/in/helcio-andre/"
+              target="_blank"
+            >
+              <span
+                class="iconify"
+                data-icon="akar-icons:linkedin-fill"
+                data-inline="false"
+              ></span>
+            </a>
+            <a
+              class="hover:text-black animation-social"
+              href="https://github.com/helciodev"
+              target="_blank"
+            >
+              <span
+                class="iconify"
+                data-icon="teenyicons:github-solid"
+                data-inline="false"
+              ></span>
+            </a>
+            <a
+              class="hover:text-blue-700 animation-social"
+              href="https://twitter.com/helcio_bruno"
+              target="_blank"
+            >
+              <span
+                class="iconify"
+                data-icon="codicon:twitter"
+                data-inline="false"
+              ></span>
+            </a>
+          </div>
+
+          <a
+            href="assets/resume/Helcio_Andre_Resume .pdf"
+            class="project-btn mt-5"
+            target="_blank"
+          >
+            Download my resume
+          </a>
+        </div>
+        <!-- second-child -->
+        <div class="space-y-4 md:pt-10">
+          <!-- lang -->
+          <div
+            id="lang"
+            class="
+              py-3
+              rounded-lg
+              px-2
+              cursor-pointer
+              border-b
+              hover:bg-body
+              capitalize
+              w-full
+              hover:border
+              cursor:pointer
+              hover:border-gray-100
+              flex
+              md:text-3xl
+              items-center
+              justify-between
+            "
+          >
+            languages
+            <span
+              id="lang-arrow"
+              class="cursor-pointer text-3xl transition-transform duration-300"
+            >
+              <span
+                id="lang-arrow"
+                class="iconify"
+                data-icon="eva:arrowhead-right-fill"
+                data-inline="false"
+              ></span>
             </span>
           </div>
-          <p class="text-sm md:text-lg">This a project build on Ruby on Rails this project mocks some of twitter features, this project was one of the most challeging ones I had so far, but it helped learn a lot about Ruby on Rails framework.</p>
-          <div class="flex-inline space-x-3 my-5">
-            <span class="tech">html</span>
-            <span class="tech">css</span>
-            <span class="tech">ruby on rails</span>
+          <div
+            id="dropdown-lang"
+            class="hidden transition-transform transform duration-200 mt-5"
+          >
+            <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+                javascript
+              </li>
+              <li class="about-items space-x-2">
+                <span
+                  class="iconify about-items-icon"
+                  data-icon="vscode-icons:file-type-css"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify about-items-icon"
+                  data-icon="vscode-icons:file-type-html"
+                  data-inline="false"
+                ></span>
+                HTML CSS
+              </li>
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="logos:ruby"
+                  data-inline="false"
+                ></span>
+                Ruby
+              </li>
+            </ul>
           </div>
-          <hr class="my-2 md:hidden">
-  
-          <div class="flex w-full space-x-2 my-5">
-            <a href="https://ha-twitter-redesign.herokuapp.com/" class="project-btn" target="_blank"> See Live <span class="iconify ml-2 text-xl" data-icon="mdi:web" data-inline="false"></span> </a>
-            <a href="https://github.com/helciodev/twittter-redesign" class="project-btn" target="_blank">  See Source <span class="iconify ml-2 text-xl" data-icon="teenyicons:github-solid" data-inline="false"></span>                                                              </a>
+          <!-- framework -->
+          <div
+            id="framework"
+            class="
+              py-3
+              rounded-lg
+              px-2
+              cursor-pointer
+              border-b
+              hover:bg-body
+              capitalize
+              w-full
+              md:text-3xl
+              flex
+              items-center
+              justify-between
+            "
+          >
+            frameworks
+            <span
+              id="framework-arrow"
+              class="cursor-pointer text-3xl transition-transform duration-300"
+            >
+              <span
+                id="lang-arrow"
+                class="iconify"
+                data-icon="eva:arrowhead-right-fill"
+                data-inline="false"
+              ></span>
+            </span>
           </div>
-          
-        </div>
-    </div>  
-    </section>
-    <section id="about-me" class="grid grid-cols-1 gap-4 md:grid-cols-2 px-10 md:px-16 py-28 md:pb-24  rounded-tr-xxl bg-white">
-      <!-- first-child -->
-      <div>
-
-        <h4 class=" project-title">
-          <span class="block">
-          About
-        </span>
-        <span class="block">
-          Myself
-        </span>
-      </h4>
-      <p class="text-sm md:text-lg lg:tex-xl">I am a software developer currently open to new opportunities, I enjoy creating intuitive, well-designed, responsive projects, a very good user experience is what comes to my mind whenever I start building a project that anyone besides me will use.</p>
-      <p class="font-body font-semibold uppercase text-connect my-3">
-        let's connect
-      </p>
-
-      <div class="flex space-x-4 text-icons text-3xl w-6/12">
-        <a class="hover:text-blue-500 animation-social" href="https://www.linkedin.com/in/helcio-andre/" target="_blank">
-          <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
-        </a>
-        <a class="hover:text-black animation-social" href="https://github.com/helciodev" target="_blank">
-          <span class="iconify" data-icon="teenyicons:github-solid" data-inline="false"></span>
-        </a>
-        <a class="hover:text-blue-700 animation-social" href="https://twitter.com/helcio_bruno" target="_blank">
-          <span class="iconify" data-icon="codicon:twitter" data-inline="false"></span>
-        </a>
-      </div>
-
-      <a href="assets/resume/Helcio_Andre_Resume .pdf" class="project-btn mt-5" target="_blank">
-        Download my resume
-      </a>
-      </div>
-      <!-- second-child -->
-      <div class="space-y-4 md:pt-10">
-        <!-- lang -->
-        <div id="lang" class="py-3 rounded-lg px-2 cursor-pointer border-b hover:bg-body capitalize w-full hover:border cursor:pointer hover:border-gray-100 flex md:text-3xl items-center justify-between">
-          languages
-          <span id="lang-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
-              <span id="lang-arrow" class="iconify" data-icon="eva:arrowhead-right-fill" data-inline="false"></span>
-          </span>
-          
-        </div>
-        <div id="dropdown-lang" class="hidden transition-transform transform duration-200 mt-5">
-          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="logos:javascript" data-inline="false"></span>
-              javascript
-            </li>
-            <li class="about-items space-x-2">
-              <span class="iconify about-items-icon" data-icon="vscode-icons:file-type-css" data-inline="false"></span>
-              <span class="iconify about-items-icon" data-icon="vscode-icons:file-type-html" data-inline="false"></span>
-              HTML CSS
-            </li>
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="logos:ruby" data-inline="false"></span>
-              Ruby
-            </li>
-          </ul>
-        </div>
-        <!-- framework -->
-        <div id="framework" class="py-3 rounded-lg px-2 cursor-pointer border-b hover:bg-body capitalize w-full md:text-3xl flex items-center justify-between">
-          frameworks
-          <span id="framework-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
-              <span id="lang-arrow" class="iconify" data-icon="eva:arrowhead-right-fill" data-inline="false"></span>
-          </span>
-        </div>
-        <div id="dropdown-framework" class="hidden transition-all duration-200 mt-5">
-          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="vscode-icons:file-type-rails" data-inline="false"></span>
-              Rails
-            </li>
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="logos:bootstrap" data-inline="false"></span>
-              Bootstrap
-            </li>
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="logos:tailwindcss-icon" data-inline="false"></span>
-              tailwindcss
-            </li>
-          </ul>
-        </div>
+          <div
+            id="dropdown-framework"
+            class="hidden transition-all duration-200 mt-5"
+          >
+            <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="vscode-icons:file-type-rails"
+                  data-inline="false"
+                ></span>
+                Rails
+              </li>
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="logos:bootstrap"
+                  data-inline="false"
+                ></span>
+                Bootstrap
+              </li>
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="logos:tailwindcss-icon"
+                  data-inline="false"
+                ></span>
+                tailwindcss
+              </li>
+            </ul>
+          </div>
           <!-- skills -->
-        <div id="skills" class=" py-3 rounded-lg px-2 cursor-pointer border-b hover:bg-body capitalize w-full flex md:text-3xl items-center justify-between">
-          skills
-          <span id="skills-arrow" class="cursor-pointer text-3xl transition-transform duration-300">	
-             <span id="lang-arrow" class="iconify" data-icon="eva:arrowhead-right-fill" data-inline="false"></span>
-          </span>
-        </div>
-        <div id="dropdown-skills" class="hidden transition-all duration-200 mt-5">
-          <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="logos:git-icon" data-inline="false"></span>
-              Git
-            </li>
-            <li class="about-items space-x-2">
-              <span class="iconify about-items-icon mr-2" data-icon="teenyicons:github-solid" data-inline="false"></span>
-              github
-            </li>
-            <li class="about-items">
-              <span class="iconify about-items-icon mr-2" data-icon="whh:remotemysql" data-inline="false"></span>
-    
-              Remote collaboration
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="contact-me" class="px-3 text-center py-16 rounded-tl-xxl rotat  bg-hover">
-      <h3 class="text-white text-3xl font-bold                                     ">Contact me</h3>
-      <p class="text-center mx-auto text-white md:text-xl text-2xl w-72 mt-4 mb-8 md:w-96">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+          <div
+            id="skills"
+            class="
+              py-3
+              rounded-lg
+              px-2
+              cursor-pointer
+              border-b
+              hover:bg-body
+              capitalize
+              w-full
+              flex
+              md:text-3xl
+              items-center
+              justify-between
+            "
+          >
+            skills
+            <span
+              id="skills-arrow"
+              class="cursor-pointer text-3xl transition-transform duration-300"
+            >
+              <span
+                id="lang-arrow"
+                class="iconify"
+                data-icon="eva:arrowhead-right-fill"
+                data-inline="false"
+              ></span>
+            </span>
+          </div>
+          <div
+            id="dropdown-skills"
+            class="hidden transition-all duration-200 mt-5"
+          >
+            <ul class="space-y-2 md:flex md:space-y-0 md:space-x-2">
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="logos:git-icon"
+                  data-inline="false"
+                ></span>
+                Git
+              </li>
+              <li class="about-items space-x-2">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="teenyicons:github-solid"
+                  data-inline="false"
+                ></span>
+                github
+              </li>
+              <li class="about-items">
+                <span
+                  class="iconify about-items-icon mr-2"
+                  data-icon="whh:remotemysql"
+                  data-inline="false"
+                ></span>
 
-      <div class="form md:w-1/3 md:mx-auto">
-        <form id="helciodev" action="https://kwes.io/api/foreign/forms/VbAq1XwUIEZmdbeeV3DA" class="flex flex-col kwes-form">
-          <input class="px-3 py-3 form-input rounded-lg mb-4" type="text" name="name" placeholder="Full name" rules="required|min:5">
-          <input class="px-3 py-3 rounded-lg mb-4" type="text" name="email" placeholder="Email" rules="required">
-          <textarea class="w-full form-textarea rounded-lg p-3" name="message" rows="6" placeholder="Write your message here" rules="required|min:15"></textarea>
-        <button class="text-logo mt-4 hover:bg-gray-300 capitalize px-3 py-3 bg-white rounded-md mx-auto w-1/2" type="submit" href="/">get in touch</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <script src="https://kwes.io/v2/kwes-script.js" defer></script>                           
-  <script src="js/smooth-scroll.js"></script>
-</body>
-</html>                                                                      
+                Remote collaboration
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact-me"
+        class="px-3 text-center py-16 rounded-tl-xxl rotat bg-hover"
+      >
+        <h3 class="text-white text-3xl font-bold">Contact me</h3>
+        <p
+          class="
+            text-center
+            mx-auto
+            text-white
+            md:text-xl
+            text-2xl
+            w-72
+            mt-4
+            mb-8
+            md:w-96
+          "
+        >
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+
+        <div class="form md:w-1/3 md:mx-auto">
+          <form
+            id="helciodev"
+            action="https://kwes.io/api/foreign/forms/VbAq1XwUIEZmdbeeV3DA"
+            class="flex flex-col kwes-form"
+          >
+            <input
+              class="px-3 py-3 form-input rounded-lg mb-4"
+              type="text"
+              name="name"
+              placeholder="Full name"
+              rules="required|min:5"
+            />
+            <input
+              class="px-3 py-3 rounded-lg mb-4"
+              type="text"
+              name="email"
+              placeholder="Email"
+              rules="required"
+            />
+            <textarea
+              class="w-full form-textarea rounded-lg p-3"
+              name="message"
+              rows="6"
+              placeholder="Write your message here"
+              rules="required|min:15"
+            ></textarea>
+            <button
+              class="
+                text-logo
+                mt-4
+                hover:bg-gray-300
+                capitalize
+                px-3
+                py-3
+                bg-white
+                rounded-md
+                mx-auto
+                w-1/2
+              "
+              type="submit"
+              href="/"
+            >
+              get in touch
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
+    <script src="js/smooth-scroll.js"></script>
+  </body>
+</html>
