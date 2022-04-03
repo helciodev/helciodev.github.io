@@ -105,3 +105,4 @@ src
 jspm_packages
 tailwind.config.js
 postcss.config.js
+package-lock.json
