@@ -716,6 +716,7 @@ video {
 
 .hidden {
   display: none;
+  opacity: 1;
 }
 
 .flex-col {
